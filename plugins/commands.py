@@ -139,12 +139,7 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
-                        [
-                         [
-                          InlineKeyboardButton('⛔️ ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ ⛔️', url=f'https://t.me/{SUPPORT_CHAT}'),
-                          InlineKeyboardButton('🫨ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                       ],
-                        ]
+
                     )
                 )
             except FloodWait as e:
@@ -360,14 +355,7 @@ async def start(client, message):
                 file_id=file_id,
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                     [
-                      InlineKeyboardButton('🫨ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=f'https://t.me/{SUPPORT_CHAT}'),
-                      InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
-                   ],[
-                      InlineKeyboardButton("ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ", url="https://t.me/NewMovie1stOnTG")
-                     ]
-                    ]
+                   
                 )
             )
             filetype = msg.media
