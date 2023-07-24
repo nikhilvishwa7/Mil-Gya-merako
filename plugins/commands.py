@@ -293,7 +293,7 @@ async def start(client, message):
                 f_caption = f"{' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files1.file_name.split()))}"
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 btn = [[
-                    InlineKeyboardButton("Buy", url=f'https://t.me/JNGohell"))
+                    InlineKeyboardButton('Buy', url=f'https://t.me/JNGohell'))
                 ]]
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !</b>",
@@ -342,7 +342,7 @@ async def start(client, message):
         try:
             if not await check_verification(client, message.from_user.id) and VERIFY == True:
                 btn = [[
-                    InlineKeyboardButton("Buy", url=f'https://t.me/JNGohell"))
+                    InlineKeyboardButton('Buy', url=f'https://t.me/JNGohell'))
                 ]]
                 await message.reply_text(
                     text="<b>You are not verified !\nKindly verify to continue !</b>",
@@ -391,7 +391,7 @@ async def start(client, message):
         f_caption = f"@New_Moviee_hindi {' '.join(filter(lambda x: not x.startswith('[') and not x.startswith('@'), files.file_name.split()))}"
     if not await check_verification(client, message.from_user.id) and VERIFY == True:
         btn = [[
-            InlineKeyboardButton("Buy", url=f'https://t.me/JNGohell"))
+            InlineKeyboardButton('Buy', url=f'https://t.me/JNGohell'))
         ]]
         await message.reply_text(
             text="<b>You are not verified !\nKindly verify to continue !</b>",
