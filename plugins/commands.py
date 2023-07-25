@@ -340,7 +340,8 @@ async def start(client, message):
                 protect_content=True if pre == 'filep' else False,
                 reply_markup=InlineKeyboardMarkup(
                     [
-                      InlineKeyboardButton('OWNER', url=f'http://t.me/JNGohell'),
+                      [
+                        InlineKeyboardButton('OWNER', url=f'http://t.me/JNGohell'),
                    ]
                     ]
                 )
