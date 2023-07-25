@@ -353,12 +353,13 @@ async def start(client, message):
             files = files_[0]
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=file_{file_id}")
             k = await client.send_message(chat_id=user,text=f"<b>🔰Price For\n\nSubscription\n 1year Plan:200\n600 Month Plan:100\n\nIf You want To Buy The Subscribtion Pay On This: jngohel@upi\n\nAnd Send Screenshot On Buy Button For Activating Your Subscribtion.</b>", reply_markup=InlineKeyboardMarkup(
-                [
                     [
-                        InlineKeyboardButton('Buy Subscription', url=f'https://t.me/JNGohell'),
+                        [
+                            InlineKeyboardButton('Buy Subscription', url=f'https://t.me/JNGohell'),
+                        ]
                     ]
-                ]
-            )                                                                                               
+                )                      
+            )                                                                                                                                
             await asyncio.sleep(1200)
             await k.edit("<b>Your message is successfully deleted!!!</b>")
             return
