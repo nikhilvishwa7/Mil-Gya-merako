@@ -260,7 +260,7 @@ async def start(client, message):
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}", True)
         else:
             g = await get_shortlink(chat_id, f"https://telegram.me/{temp.U_NAME}?start=allfiles_{file_id}", False)
-        k = await client.send_message(chat_id=message.from_user.id,text=f"<b>🔰Price For\n\nSubscription\n 1year Plan:200\n600 Month Plan:100\n\nIf You want To Buy The Subscribtion Pay On This: jngohel@upi\n\nAnd Send Screenshot On Buy Button For Activating Your Subscribtion.</i></b>", reply_markup=InlineKeyboardMarkup(
+        k = await client.send_message(chat_id=message.from_user.id,text=f"<b>🔰Price For\n\nSubscription\n\n 1year Plan:200\n600 Month Plan:100\n\nIf You want To Buy The Subscribtion Pay On This: jngohel@upi\n\nAnd Send Screenshot On Buy Button For Activating Your Subscribtion.</b>", reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton('Buy Subscription', url=f'https://t.me/JNGohell')
